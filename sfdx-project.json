@@ -1,0 +1,35 @@
+{
+  "packageDirectories": [
+    { "path": "sfdx-source/my_ns_prefix", "default": true },
+    { "path": "sfdx-source/unpackaged"},
+    { "path": "sfdx-source/untracked"}
+  ],
+  "namespace": "my_ns_prefix",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "43.0",
+  "plugins": {
+    "sfdxFalcon": {
+      "producerAlias"   : "univ-ctrs",
+      "producerName"    : "Universal Containers",
+      "projectAlias"    : "uc-pkgd-app",
+      "projectName"     : "vmc-APK-test",
+      "projectType"     : "appx:managed1gp",
+      "defaultRecipe"   : "build-scratch-org.json",
+      "gitRemoteUri"    : "https://github.com/VivekMChawla/apk-sample.git",
+      "gitHubUrl"       : "https://github.com/my-org/my-repo",
+      "projectVersion"  : "0.0.1",
+      "schemaVersion"   : "0.0.1",
+      "pluginVersion"   : "0.0.8",
+      "appxPackage"     : {
+        "namespacePrefix"   : "my_ns_prefix",
+        "packageName"       : "My Managed Package",
+        "metadataPackageId" : "033000000000000",
+        "packageVersionId"  : {
+          "release" : "04t000000000000",
+          "beta"    : "04t000000000000"
+        }
+      },
+      "appxDemo": {}
+    }
+  }
+}
